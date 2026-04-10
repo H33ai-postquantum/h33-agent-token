@@ -1,0 +1,33 @@
+[package]
+name = "h33-agent-token"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.75"
+authors = ["H33.ai, Inc. <support@h33.ai>"]
+description = "H33 agent capability token (cka_*) — 64-byte payload, HMAC-SHA3-256 signature, 128-bit capability bitmap. Shared crate used by scif-backend, auth1-delivery-rs, h33-mcp, and h33-cli. Enforces the architectural rule: agents hold cka_*, servers hold ck_live_*, they are never the same thing."
+license = "Proprietary"
+homepage = "https://h33.ai"
+repository = "https://github.com/H33ai-postquantum/h33-agent-token"
+keywords = ["h33", "post-quantum", "auth", "token", "agent"]
+categories = ["authentication", "cryptography"]
+readme = "README.md"
+
+[dependencies]
+sha3 = "0.10"
+hmac = "0.12"
+subtle = "2.6"
+base64 = "0.22"
+hex = "0.4"
+thiserror = "1.0"
+
+[dev-dependencies]
+pretty_assertions = "1.4"
+
+[lints.rust]
+unsafe_code = "forbid"
+missing_debug_implementations = "warn"
+rust_2018_idioms = "warn"
+
+[lints.clippy]
+unwrap_used = "deny"
+expect_used = "deny"
