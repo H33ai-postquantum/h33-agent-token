@@ -180,3 +180,9 @@ index = "https://gitlab.com/drata5764111/h33/_cargo-api/packages/cargo"
 Proprietary. Commercial License Required. See `LICENSE`.
 
 This crate is part of the H33 post-quantum security infrastructure. Patent pending.
+
+---
+
+**H33 Products:** [H33-74](https://h33.ai) · [Auth1](https://auth1.ai) · [Chat101](https://chat101.ai) · [Cachee](https://cachee.ai) · [Z101](https://z101.ai) · [RevMine](https://revmine.ai) · [BotShield](https://h33.ai/botshield)
+
+*Introducing H33-74. 74 bytes. Any computation. Post-quantum attested. Forever.*
